@@ -1,0 +1,56 @@
+/* Global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    /* Fonts */
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+    /* Colors */
+    --primary-color: #11978c;
+    --secondary-color: hsl(143, 85%, 58%);
+    --gray-1: #25292dff;
+    --gray-2: #40474fff;
+    --gray-3: #65707bff;
+    --gray-4: #b0b8bfff;
+    --gray-5: #dde0e3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    color: var(--gray-1);
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {}
