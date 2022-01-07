@@ -69,6 +69,22 @@ function get_custom_post_date(){
     }
 }
 
+// If updated, returns custom post update date
+function get_custom_post_modified_time(){
+    if (get_custom_post_date() != get_the_time()){
+        if (get_custom_post_date('Yd') === current_time( 'Yd' )) {
+            if (get_the_time('Yd') === current_time( 'Yd' )) {
+                $data_atualizado = get_the_modified_date('\a\t H:i', strtotime($recent['post_date']));
+            } else {
+                $data_atualizado = get_the_modified_date('\t\o\d\a\y \a\t H:i', strtotime($recent['post_date']));
+            }
+        } else {
+            $data_atualizado = get_the_modified_date('d/m/Y \a\t H:i', strtotime($recent['post_date']));
+        }
+        return "• Updated " . $data_atualizado;
+    }
+}
+
 // Custom Post types
 // require get_template_directory() . '/custom_post_types/post-type-name.php';
 
