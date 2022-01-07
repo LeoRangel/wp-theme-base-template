@@ -1,11 +1,14 @@
 <nav id="navbar">
     <ul>
         <li>
-            <span><strong>Wordpress theme base template</strong></span>
-        </li>
-        <li>
             <a href="<?php echo bloginfo('url') ?>">
-                Home
+                <img
+                    src="<?php bloginfo('template_url'); ?>/static/images/logo.png"
+                    alt="Website logo"
+                    width="120px"
+                    height="120px"
+                    loading="lazy"
+                >
             </a>
         </li>
         <li>
