@@ -7,10 +7,10 @@ Template Name: Search
 <?php get_header(); ?>
 
 <main>
-    <section>
-        <!-- Header Search -->
-        <?php get_template_part('templates/headers/search-header'); ?>
+    <!-- Header Search -->
+    <?php get_template_part('templates/headers/search-header'); ?>
     
+    <section>
         <?php
             $args = array(
                 'post_type'=>'post',

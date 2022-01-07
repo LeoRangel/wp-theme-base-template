@@ -35,28 +35,7 @@
 
 <body>
 
-<header>
-    <h1><?php echo bloginfo('name'); ?></h1>
-    <br>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="<?php echo bloginfo('url') ?>">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="<?php echo bloginfo('url') ?>/feed/" target="_blank" rel="noopener">
-                    Feed RSS
-                </a>
-            </li>
-            <li>
-                <a href="<?php echo bloginfo('url') ?>/contact/">
-                    Contact
-                </a>
-            </li>
-        </ul>
-    </nav>
+<header id="mainHeader">
+    <!-- Navbar -->
+    <?php get_template_part('templates/navs/navbar'); ?>
 </header>
-<br>
